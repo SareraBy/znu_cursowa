@@ -1,0 +1,40 @@
+
+.profile {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+.profile__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+.profile__info {
+    color: #fff;
+}
+.profile__name {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.profile__email,
+.profile__role {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.25rem;
+}
+.profile__actions {
+    display: flex;
+    gap: 0.75rem;
+}
+.profile__section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.profile__content {
+    background: rgba(0,0,0,0.6);
+    padding: 1rem;
+    border-radius: 8px;
+}

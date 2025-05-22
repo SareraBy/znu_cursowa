@@ -1,0 +1,70 @@
+
+.article-page {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: rgba(62, 60, 60, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(71, 69, 69, 0.5);
+    color: #fff;
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding: 0.6rem 1.2rem;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s, transform 0.2s;
+}
+.back-button:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+}
+
+.article-header {
+    margin-bottom: 1.5rem;
+}
+.article-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.article-meta {
+    font-size: 0.875rem;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 0.25rem;
+}
+
+.article-content {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #eee;
+    margin-bottom: 1.5rem;
+}
+
+.article-dates {
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+    color: rgba(255,255,255,0.7);
+}
+.article-dates p {
+    margin-bottom: 0.5rem;
+}
+
+
+.article-header .tag,
+.article-header span.tag {
+    display: inline-block;
+    margin-right: 6px;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    border-radius: 12px;
+    background: rgba(33,150,243,0.3);
+    color: #fff;
+}
