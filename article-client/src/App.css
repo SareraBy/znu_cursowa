@@ -1,6 +1,4 @@
-/* App.css */
 
-/* 1. Универсальный сброс и плавные переходы */
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +7,14 @@
   opacity 0.2s ease, transform 0.2s ease;
 }
 
-/* 2. Фон страницы и шрифт */
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background: #001f3f;
   color: #fff;
 }
 
-/* 3. Навигация (.app-nav вместо <nav>) */
+
 .app-nav {
   display: flex;
   justify-content: space-between;
@@ -52,7 +50,7 @@ body {
   transform: translateY(0);
 }
 
-/* 4. Главный контейнер (.app-main вместо .App) */
+
 .app-main {
   max-width: 800px;
   margin: 2rem auto;
@@ -65,7 +63,7 @@ body {
   min-height: calc(100vh - 64px);
 }
 
-/* 5. Карточки (в том числе и в списке статей) */
+
 .card {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
@@ -76,19 +74,19 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* 6. Заголовки */
+
 h1, h2, h3 {
   margin-bottom: 1rem;
   color: #fff;
 }
 
-/* 7. Основные абзацы */
+
 p {
   margin-bottom: 1rem;
   line-height: 1.6;
 }
 
-/* 8. Формы и поля ввода */
+
 form input,
 form textarea,
 form select,
@@ -120,7 +118,7 @@ form select:focus,
   box-shadow: 0 0 0 3px rgba(0, 122, 204, 0.4);
 }
 
-/* 9. Глобальные кнопки */
+
 button,
 .button {
   color: #fff;
@@ -141,7 +139,7 @@ button:active,
 .button:active {
   transform: translateY(0);
 }
-/* Primary / Secondary buttons */
+
 .button--primary {
   background: #007acc;
   border-color: #007acc;
@@ -154,7 +152,7 @@ button:active,
   border-color: #fff;
 }
 
-/* 10. Разделитель */
+
 hr {
   border: none;
   height: 1px;
@@ -162,7 +160,7 @@ hr {
   margin: 2rem 0;
 }
 
-/* 11. Стили для селектов с кастомной стрелкой */
+
 .select {
   appearance: none;
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg width='10' height='5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l5 5 5-5' fill='none' stroke='%23fff'/%3E%3C/svg%3E");
@@ -172,7 +170,7 @@ hr {
   background-color: rgba(0,0,0,0.6);
 }
 
-/* 12. Стили для страницы профиля */
+
 .profile {
   max-width: 1000px;
   margin: 2rem auto;
@@ -209,7 +207,7 @@ hr {
   border-radius: 8px;
 }
 
-/* 13. Стили тегов и подсказок (ArticleForm) */
+
 .tag-group {
   position: relative;
   margin-top: 1rem;
