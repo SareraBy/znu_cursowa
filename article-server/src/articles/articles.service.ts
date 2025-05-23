@@ -151,14 +151,14 @@ export class ArticlesService {
         );
       }
 
-      // 2) Если tags был передан (в том числе пустой массив), обновляем связи
+
       if (data.tags !== undefined) {
-        // Удаляем старые связи
+
         await client.query(
           `DELETE FROM article_tags WHERE article_id = $1`,
           [id]
         );
-        // Вставляем новые
+
         for (const raw of data.tags) {
           const tagId = Number(raw);
           if (Number.isInteger(tagId) && tagId > 0) {
@@ -170,32 +170,27 @@ export class ArticlesService {
         }
       }
 
-      // 3) Возвращаем свежую статью
       return this.findOne(id);
     } finally {
       client.release();
     }
   }
 
-  /**
-   * Удаляет статью и все её связи:
-   * - article_tags
-   * - comments
-   */
+
   async remove(id: number): Promise<void> {
     const client = await pool.connect();
     try {
-      // 1) Удаляем связи с тегами
+
       await client.query(
         `DELETE FROM article_tags WHERE article_id = $1`,
         [id]
       );
-      // 2) Удаляем комментарии по статье
+
       await client.query(
         `DELETE FROM comments WHERE article_id = $1`,
         [id]
       );
-      // 3) Удаляем саму статью
+
       await client.query(
         `DELETE FROM articles WHERE id = $1`,
         [id]
